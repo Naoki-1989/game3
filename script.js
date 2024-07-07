@@ -8,18 +8,18 @@ let score = 0;
 let gameRunning = false;
 let dropInterval;
 
-canvas.width = 400;
-canvas.height = 600;
+canvas.width = 800; // 2倍に変更
+canvas.height = 1200; // 2倍に変更
 
 const fruitTypes = [
-    { type: 'F1.4', color: 'red', size: 20 },
-    { type: 'F2', color: 'orange', size: 25 },
-    { type: 'F2.8', color: 'yellow', size: 30 },
-    { type: 'F4', color: 'green', size: 35 },
-    { type: 'F5.6', color: 'blue', size: 40 },
-    { type: 'F8', color: 'purple', size: 45 },
-    { type: 'F11', color: 'pink', size: 50 },
-    { type: 'F16', color: 'gray', size: 55 }
+    { type: 'F1.4', color: 'red', size: 40 }, // サイズも2倍に変更
+    { type: 'F2', color: 'orange', size: 50 },
+    { type: 'F2.8', color: 'yellow', size: 60 },
+    { type: 'F4', color: 'green', size: 70 },
+    { type: 'F5.6', color: 'blue', size: 80 },
+    { type: 'F8', color: 'purple', size: 90 },
+    { type: 'F11', color: 'pink', size: 100 },
+    { type: 'F16', color: 'gray', size: 110 }
 ];
 
 class Fruit {
